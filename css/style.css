@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+  max-width:100%;
+}
+.main_page {
+    width: 95%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+}
+
+header {
+    width: auto;
+    height: 80px;
+    padding: 0 100px;
+    background-color: #EAE9DC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    overflow:hidden;
+    z-index: 999;
+}
+
+.logo {
+    width: 145px;
+    height: 100px;
+    padding: 15px 0 5px;
+    background-color: #EAE9DC;
+}
+
+.logo p{
+    font-family: 'Espa';
+    font-size: 40px;
+    line-height: 33px;
+    color: #CF2037;
+}
+
+.header_ol {
+    width: 600px;
+    height: 50px;
+    background-color: #EAE9DC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 100px;
+}
+
+.header_li {
+    width: 130px;
+    height: 50px;
+    background-color: #EAE9DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_li a {
+    text-decoration: none;
+    font-size: 33px;
+    color: #CF2037;
+    font-family: 'Circe Regular';
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+/*
+.main1 {
+    width: auto;
+    height: 550px;
+    margin: 50px 0;
+    padding: 0 90px 0 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+}
+*/
+
+
+.main1 {
+    width: auto;
+    height: 550px;
+    margin: 50px 0;
+    padding: 0 90px 0 47px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+}
+.main_info {
+    width: 400px;
+    height: 300px;
+   background-color: darkorange;
+/*    overflow: hidden;*/
+    font-family: 'Circe Regular';
+    background-image: url(/image/wb2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0px;
+    align-self:flex-end;
+    justify-self:flex-end;
+}
+
+.main_photo {
+    width: 670px;
+    height: 475px;
+    align-self:flex-end;
+    justify-self:flex-end;
+    top: 0px;
+    left: 0px;
+}
+.main_photo img {
+    width: 670px;
+    height: 548px;
+}
+
+
+.main_info p {
+    color: #861D59;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.page1{
+     width: 95%;
+    min-height: 100vh;
+    margin: 0 auto;
+/*  background-color: bisque;*/
+    
+}
+
+.page2{
+     width: 95%;
+    min-height: 100vh;
+    margin: 0 auto;
+/*    background-color: bisque;*/
+}
+
+.page3{
+     width: 95%;
+    min-height: 100vh;
+    margin: 0 auto;
+/*    background-color: bisque;*/
+}
+
+.page4{
+     width: 95%;
+    min-height: 100vh;
+    margin: 0 auto;
+/*    background-color: bisque;*/
+}
