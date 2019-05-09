@@ -6,47 +6,63 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
-    
     <style>
-    body{
-        background:#EAE9DC url(image/wireframe.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
+        body {
+            background: #EAE9DC url(image/wireframe.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
         }
     </style>
-
 </head>
 
 <body>
     <div class="main_page">
         <header>
-            <div class="logo"><p>SOFIA</p><p>POKORCHAK</p></div>
+            <nav>
+                <div class="logo">
+                    <a href="#main">
+                        <p class="lg">SOFIA</p>
+                        <p class="lg">POKORCHAK</p>
+                    </a>
+                </div>
+            </nav>
             <nav>
                 <ol class="header_ol">
-                    <li class="header_li"><a href="#">Portfolio</a></li>
-                    <li class="header_li"><a href="#">About</a></li>
-                    <li class="header_li"><a href="#">Photo</a></li>
-                    <li class="header_li"><a href="#">Contacts</a></li>
+                    <li class="header_li"><a href="#portfolio">Portfolio</a></li>
+                    <li class="header_li"><a href="#about">About</a></li>
+                    <li class="header_li"><a href="#photo">Photo</a></li>
+                    <li class="header_li"><a href="#contacts">Contacts</a></li>
                 </ol>
             </nav>
         </header>
-        <div class="main1">
-            <div class="main_photo">
-                <img src="image/web%20burning%202.png">
-            </div>
-            <div class="main_info">
-                <p>Hi, I am graphic design and illustration student based in Ukraine
-                AAAAAAAAAAAAAAAAA</p>
-                <div class="gm">
-    
+        <div class="main1" id="main">
+            <div class="main_photo"> <img src="image/web%20burning%202.png"> </div>
+            <div class="main_info"> <img src="image/wb.png">
+                <p>Hi, I am graphic design and illustration student based in Ukraine</p>
+                <div class="gm"> </div>
             </div>
         </div>
-    </div>
-    <div class="page1"></div>
-    <div class="page2"></div>
-    <div class="page3"></div>
-    <div class="page4"></div>
-    <footer></footer>
+        <div class="page1" id="portfolio">
+            <div class="gallery">
+                <div class="gl gl1"><img src="image/midsummer%20night%20n.png" alt="summer-night"></div>
+                <div class="gl gl2"><img src="image/Free-Offset-Paper-Poster-Mockup-PSD%202.png" alt="poster"></div>
+                <div class="gl gl3"><img src="image/pes.png" alt="pes"></div>
+                <div class="gl gl4"><img src="image/Free-Offset-Paper-Poster-Mockup-PSD.png" alt="poster2"></div>
+                <div class="gl gl5"><img src="image/Template_0sdbg.png" alt="happy-poster"></div>
+                <div class="gl gl6"><img src="image/%D1%84%D1%82%D0%B2%202%20n.png" alt="ruki"></div>
+                <div class="gl gl7"><img src="image/plakat%20small.png" alt="plakat-lnam"></div>
+                <div class="gl gl8"><img src="image/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%B4%D1%80%D1%83%D0%BA%20ytkt.png" alt="photo-bomba"></div>
+            </div>
+        </div>
+        <div class="page2" id="about">
+            <div class="ab">
+                <div class="about_info"></div>
+                <div class="about_photo"><img src="image/_MG_7281.jpg" alt="that's me"></div>
+            </div>
+        </div>
+        <div class="page3" id="photo"></div>
+        <div class="page4" id="contacts"></div>
+        <footer></footer>
 </body>
 
 </html>

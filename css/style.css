@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .body {
-  max-width:100%;
+    max-width: 100%;
 }
+
 .main_page {
     width: 95%;
     min-height: 100vh;
@@ -23,7 +25,7 @@ header {
     justify-content: space-between;
     flex-direction: row;
     position: fixed;
-    overflow:hidden;
+    overflow: hidden;
     z-index: 999;
 }
 
@@ -34,7 +36,15 @@ header {
     background-color: #EAE9DC;
 }
 
-.logo p{
+.lg {
+    font-family: 'Espa';
+    font-size: 40px;
+    line-height: 33px;
+    color: #CF2037;
+}
+
+.logo a {
+    text-decoration: none;
     font-family: 'Espa';
     font-size: 40px;
     line-height: 33px;
@@ -70,6 +80,7 @@ header {
     padding-top: 8px;
 }
 
+
 /*
 .main1 {
     width: auto;
@@ -83,77 +94,211 @@ header {
 }
 */
 
-
 .main1 {
     width: auto;
     height: 550px;
-    margin: 50px 0;
+    margin: 50px 0 72px;
     padding: 0 90px 0 47px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-    
 }
+
 .main_info {
     width: 400px;
     height: 300px;
-   background-color: darkorange;
-/*    overflow: hidden;*/
+    /*   background-color: darkorange;*/
+    /*    overflow: hidden;*/
     font-family: 'Circe Regular';
-    background-image: url(/image/wb2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    top: 0px;
+    top: -70px;
     left: 0px;
-    align-self:flex-end;
-    justify-self:flex-end;
+    align-self: flex-end;
+    justify-self: flex-end;
+    position: relative;
 }
 
 .main_photo {
     width: 670px;
     height: 475px;
-    align-self:flex-end;
-    justify-self:flex-end;
+    align-self: flex-end;
+    justify-self: flex-end;
     top: 0px;
     left: 0px;
 }
+
 .main_photo img {
     width: 670px;
     height: 548px;
 }
 
+.main_info img {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 
 .main_info p {
     color: #861D59;
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bold;
+    position: absolute;
+    top: 20px;
+    width: 310px;
+    margin: 38px 55px 0;
+    text-align: center;
 }
 
-.page1{
-     width: 95%;
+.page1 {
+    width: 95%;
     min-height: 100vh;
     margin: 0 auto;
-/*  background-color: bisque;*/
-    
+    padding: 160px 0;
 }
 
-.page2{
-     width: 95%;
-    min-height: 100vh;
+.gallery {
+    width: 873px;
+    height: 1120px;
     margin: 0 auto;
-/*    background-color: bisque;*/
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr 4fr;
+    grid-template-rows: 3fr 1fr 3fr 5fr;
+    grid-gap: 12px;
 }
 
-.page3{
-     width: 95%;
-    min-height: 100vh;
-    margin: 0 auto;
-/*    background-color: bisque;*/
+.gl {
+    border: 3px solid #e8c81b;
+    overflow: hidden;
 }
 
-.page4{
-     width: 95%;
+.gl1 {
+    background-color: white;
+}
+
+.gl1 img {
+    width: 250px;
+    margin: 10px 0;
+}
+
+.gl2 {
+    background-color: #c1c2c2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gl2 img {
+    width: 260px;
+    margin: 22px 0;
+}
+
+.gl3 {
+    background-color: white;
+}
+
+.gl3 img {
+    width: 437px;
+    margin: -15px -14px;
+}
+
+.gl4 {
+    background-color: #c1c2c2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.gl4 img {
+    width: 250px;
+    margin: 25px 0;
+}
+
+.gl5 {
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.gl5 img{
+    width: 365px;
+    margin: 0 -54px;
+}
+
+.gl6 {
+    background-color: #020000;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.gl6 img{
+    width: 334px;
+}
+
+.gl7 {
+    background-color: #ab834a;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gl7 img{
+    width: 346px;
+    margin: 10px -5px;
+}
+
+.gl8 {
+    background-color: #dadad2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.gl8 img{
+    width: 513px;
+    margin: -55px 0;
+}
+
+.page2 {
+    width: 95%;
     min-height: 100vh;
     margin: 0 auto;
-/*    background-color: bisque;*/
+    border: 1px solid black;
+    /*    background-color: bisque;*/
+}
+
+.ab{
+    width: 872px;
+    height: 395px;
+    margin: 167px 136px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 4fr 2fr 5fr;
+    grid-template-rows: 5fr 3fr;
+    grid-gap: 12px;
+}
+
+/*
+.about_info{
+    width: 
+}
+*/
+
+.about_photo img{
+    width: 300px;
+}
+
+.page3 {
+    width: 95%;
+    min-height: 100vh;
+    margin: 0 auto;
+    border: 1px solid black;
+    /*    background-color: bisque;*/
+}
+
+.page4 {
+    width: 95%;
+    min-height: 100vh;
+    margin: 0 auto;
+    border: 1px solid black;
+    /*    background-color: bisque;*/
 }
