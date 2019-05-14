@@ -78,6 +78,43 @@ header {
     font-family: 'Circe Regular';
     font-weight: bold;
     padding-top: 8px;
+    display: inline-block;
+    position: relative;
+}
+
+.header_li a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    transition: width 0s ease, background .35s ease;
+}
+
+.header_li a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    background: #CF2037;
+    transition: width .35s ease;
+}
+
+.header_li a:hover:before {
+    width: 100%;
+    background: #CF2037;
+    transition: width .35s ease;
+}
+
+.header_li a:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
 }
 
 
@@ -168,6 +205,22 @@ header {
     grid-gap: 12px;
 }
 
+.img-fluid {
+    max-width: 100%;
+}
+
+.gallery a {
+    display: block;
+}
+
+.gallery a:hover img {
+    transform: scale(1.15, 1.15);
+}
+
+.gallery a img {
+    transition: all 0.25s ease-in-out;
+}
+
 .gl {
     border: 3px solid #e8c81b;
     overflow: hidden;
@@ -221,7 +274,7 @@ header {
     grid-column-end: 4;
 }
 
-.gl5 img{
+.gl5 img {
     width: 365px;
     margin: 0 -54px;
 }
@@ -232,7 +285,7 @@ header {
     grid-row-end: 4;
 }
 
-.gl6 img{
+.gl6 img {
     width: 334px;
 }
 
@@ -242,7 +295,7 @@ header {
     grid-column-end: 3;
 }
 
-.gl7 img{
+.gl7 img {
     width: 346px;
     margin: 10px -5px;
 }
@@ -253,7 +306,7 @@ header {
     grid-column-end: 5;
 }
 
-.gl8 img{
+.gl8 img {
     width: 513px;
     margin: -55px 0;
 }
@@ -266,33 +319,65 @@ header {
     /*    background-color: bisque;*/
 }
 
-.ab{
+.ab {
     width: 872px;
     height: 395px;
     margin: 167px 136px;
     border: 1px solid black;
     display: grid;
-    grid-template-columns: 4fr 2fr 5fr;
-    grid-template-rows: 5fr 3fr;
-    grid-gap: 12px;
+    grid-template-columns: 4fr 1fr 3fr;
+    grid-template-rows: 6fr 1fr 2fr 1fr;
 }
 
-/*
-.about_info{
-    width: 
+.about_photo img {
+    width: 326px;
 }
+
+.about_photo {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.about_info {
+    /*
+    width: 400px;
+    height: 300px;
 */
-
-.about_photo img{
-    width: 300px;
+    background-color: darkorange;
+    overflow: hidden;
+    font-family: 'Circe Regular';
+    font-size: 23px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
 }
 
 .page3 {
     width: 95%;
+    padding: 100px 0;
     min-height: 100vh;
     margin: 0 auto;
     border: 1px solid black;
     /*    background-color: bisque;*/
+}
+
+.page3 h1 {
+    margin: 20px 0 30px;
+    color: #861D59;
+    font-family: 'Circe Regular';
+    text-align: center;
+    font-size: 38px;
+}
+
+.ph {
+    width: 872px;
+    height: 395px;
+    margin: 167px 136px;
+    border: 1px solid black;
+    display: grid;
 }
 
 .page4 {
@@ -301,4 +386,75 @@ header {
     margin: 0 auto;
     border: 1px solid black;
     /*    background-color: bisque;*/
+}
+
+.con {
+    width: 872px;
+    height: 395px;
+    margin: 167px 136px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 6fr 2fr 1fr 5fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
+}
+
+.cont {
+    color: #861D59;
+    font-family: Circe;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ic {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+.iconsclass {
+    width: 100px;
+    height: 110px;
+}
+.contacts_image {
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+
+.contacts_image img {
+    width: 370px;
+}
+
+.contacts_general {
+    background-color: chocolate;
+    display: grid;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+.behance {
+    position: relative;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.email {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.instagram {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.facebook {
+    grid-row-start: 5;
+    grid-row-end: 6;
 }

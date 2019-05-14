@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Circe Regular';
+    src: url('circe/Circe-Regular.eot');
+    src: url('circe/Circe-Regular.eot?#iefix') format('embedded-opentype'), url('circe/Circe-Regular.woff') format('woff'), url('circe/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Espa';
+    src: url('espa/Espa.woff') format('woff'), url('espa/Espa.woff2') format('woff2'), url('espa/Espa.otf') format('OpenType');
+    font-weight: normal;
+    font-style: normal;
+}

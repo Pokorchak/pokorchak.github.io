@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <style>
         body {
             background: #EAE9DC url(image/wireframe.png);
@@ -13,7 +15,7 @@
             background-size: 100%;
         }
     </style>
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> </head>
 
 <body>
     <div class="main_page">
@@ -44,25 +46,65 @@
         </div>
         <div class="page1" id="portfolio">
             <div class="gallery">
-                <div class="gl gl1"><img src="image/midsummer%20night%20n.png" alt="summer-night"></div>
-                <div class="gl gl2"><img src="image/Free-Offset-Paper-Poster-Mockup-PSD%202.png" alt="poster"></div>
-                <div class="gl gl3"><img src="image/pes.png" alt="pes"></div>
-                <div class="gl gl4"><img src="image/Free-Offset-Paper-Poster-Mockup-PSD.png" alt="poster2"></div>
-                <div class="gl gl5"><img src="image/Template_0sdbg.png" alt="happy-poster"></div>
-                <div class="gl gl6"><img src="image/%D1%84%D1%82%D0%B2%202%20n.png" alt="ruki"></div>
-                <div class="gl gl7"><img src="image/plakat%20small.png" alt="plakat-lnam"></div>
-                <div class="gl gl8"><img src="image/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%B4%D1%80%D1%83%D0%BA%20ytkt.png" alt="photo-bomba"></div>
+                <div class="gl gl1 ">
+                    <a data-fancybox="gallery"><img class="img-fluid" src="image/midsummer%20night%20n.png" alt="summer-night"></a>
+                </div>
+                <div class="gl gl2">
+                    <a data-fancybox="gallery"><img class="img-fluid" src="image/Free-Offset-Paper-Poster-Mockup-PSD%202.png" alt="poster"></a>
+                </div>
+                <div class="gl gl3">
+                    <a data-fancybox="gallery"><img class="img-fluid" src="image/pes.png" alt="pes"></a>
+                </div>
+                <div class="gl gl4">
+                    <a data-fancybox="gallery"><img class="img-fluid" src="image/Free-Offset-Paper-Poster-Mockup-PSD.png" alt="poster2"></a>
+                </div>
+                <div class="gl gl5">
+                    <a data-fancybox="gallery"><img class="img-fluid" src="image/Template_0sdbg.png" alt="happy-poster"></a>
+                </div>
+                <div class="gl gl6">
+                    <a data-fancybox="gallery"><img class="img-fluid" src="image/%D1%84%D1%82%D0%B2%202%20n.png" alt="ruki"></a>
+                </div>
+                <div class="gl gl7">
+                    <a data-fancybox="gallery"><img class="img-fluid" src="image/plakat%20small.png" alt="plakat-lnam"></a>
+                </div>
+                <div class="gl gl8">
+                    <a data-fancybox="gallery"><img class="img-fluid" src="image/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%B4%D1%80%D1%83%D0%BA%20ytkt.png" alt="photo-bomba"></a>
+                </div>
             </div>
         </div>
         <div class="page2" id="about">
             <div class="ab">
-                <div class="about_info"></div>
+                <div class="about_info">
+                    <p>Hi, I am graphic design and illustration student based in Ukraine. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere saepe nesciunt atque explicabo necessitatibus earum pariatur excepturi, voluptatibus ex numquam animi repellat in, amet officia omnis minus quae libero soluta.</p>
+                    <div class="icons"> </div>
+                </div>
                 <div class="about_photo"><img src="image/_MG_7281.jpg" alt="that's me"></div>
             </div>
         </div>
-        <div class="page3" id="photo"></div>
-        <div class="page4" id="contacts"></div>
+        <div class="page3" id="photo">
+            <h1>Photo gallery</h1>
+            <div class='images'>
+                <div class='arrows'> <i class='prev'>&larr;</i> <i class='next'>&rarr;</i> </div>
+                <div class='image-container'><img src='https://unsplash.it/400/300/?image=101'><img src='https://unsplash.it/400/300/?image=102'><img src='https://unsplash.it/400/300/?image=103'><img src='https://unsplash.it/400/300/?image=104'><img src='https://unsplash.it/400/300/?image=100'></div>
+            </div>
+        </div>
+        <div class="page4" id="contacts">
+            <div class="con">
+                <div class="contacts_image"> <img src="image/wsrfhdh.png"> </div>
+                <div class="ic"> <i class="fab fa-behance iconsclass"></i> <i class="far fa-envelope iconsclass"></i> <i class="fab fa-instagram iconsclass"></i> <i class="fab fa-facebook-f iconsclass"></i> </div>
+                <div class="contacts_general">
+                    <div class="behance cont"><a href="#" class="cont">behance</a></div>
+                    <div class="email cont">email</div>
+                    <div class="instagram cont">instagram</div>
+                    <div class="facebook cont">facebook</div>
+                </div>
+            </div>
+        </div>
         <footer></footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
+    </div>
 </body>
 
 </html>
